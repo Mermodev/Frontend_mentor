@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #edf2f8;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  line-height: 1.4;
+}
+
+#BoxGrid {
+  max-width: 1200px;
+  width: 90%;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.BoundingSection {
+  display: flex;
+  gap: 24px;
+}
+
+#LeftBigBox {
+  flex-direction: column;
+  flex: 3;
+  gap: 24px;
+}
+
+.PersonArticle {
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: 20px 25px 40px -15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+#DanielClifford {
+  background-color: hsl(263, 55%, 52%);
+  flex: 2;
+  color: white;
+}
+
+#JonathanWalters {
+  background-color: hsl(217, 19%, 35%);
+  flex: 1;
+  color: white;
+}
+
+#JeanetteHarmon {
+  background-color: hsl(0, 0%, 100%);
+  flex: 1;
+  color: hsl(217, 19%, 35%);
+  box-shadow: 20px 25px 40px -15px rgba(0,0,0,0.1);
+}
+
+#PatrickAbrams {
+  background-color: hsl(219, 29%, 14%);
+  flex: 2;
+  color: white;
+}
+
+#KiraWhittle {
+  background-color: hsl(0, 0%, 100%);
+  flex: 1;
+  color: hsl(217, 19%, 35%);
+  box-shadow: 20px 25px 40px -15px rgba(0,0,0,0.1);
+}
+
+
+#BigAhhQuotationMarkInTheBackground {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.Credentials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.Credentials .TextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.UserProfile {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(255,255,255,0.5);
+  flex-shrink: 0;
+}
+
+#DanielClifford .UserProfile {
+  border-color: hsl(263, 100%, 75%);
+}
+
+#PatrickAbrams .UserProfile {
+  border-color: hsl(263, 55%, 52%);
+}
+
+.NameSurname {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.Title {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.ArticleTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 16px 0 20px 0;
+  line-height: 1.3;
+  position: relative;
+  z-index: 2;
+}
+
+.ArticleText {
+  font-size: 13px;
+  line-height: 1.45;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#SmallTopBox, #SmallBottomBox {
+  display: flex;
+  gap: 24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: hsl(217, 19%, 35%);
+}
+
+.attribution a {
+  color: hsl(263, 55%, 52%);
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  #BoxGrid {
+    flex-direction: column;
+    width: 95%;
+  }
+  
+  .BoundingSection {
+    flex-direction: column;
+  }
+  
+  #SmallTopBox, #SmallBottomBox {
+    flex-direction: column;
+  }
+  
+  .PersonArticle {
+    flex: auto !important;
+  }
+  
+  #BigAhhQuotationMarkInTheBackground {
+    right: 20px;
+    width: 90px;
+  }
+}
