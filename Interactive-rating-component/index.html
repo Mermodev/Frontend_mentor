@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Rating</title>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card" id="rating-card">
+    <div class="star">
+      <img src="images/icon-star.svg" alt="star icon">
+    </div>
+
+    <h2>How did we do?</h2>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <div class="ratings">
+      <button class="rating-btn">1</button>
+      <button class="rating-btn">2</button>
+      <button class="rating-btn">3</button>
+      <button class="rating-btn">4</button>
+      <button class="rating-btn">5</button>
+    </div>
+
+    <button class="submit-btn">SUBMIT</button>
+  </div>
+
+  <div class="card hidden center" id="thank-card">
+    <img src="images/illustration-thank-you.svg" alt="thank you illustration" class="thank-img">
+
+    <p class="selected-text" id="selected-text"></p>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support don't hesitate to get in touch.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
