@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<title>Contact Form</title>
+</head>
+<body>
+<aside id="toast" role="alert" aria-live="assertive" aria-atomic="true" hidden>
+  <header>
+    <img src="assets/images/icon-success-check.svg" alt="">
+    <strong>Message Sent!</strong>
+  </header>
+  <p>Thanks for completing the form. We'll be in touch soon!</p>
+</aside>
+<main>
+  <article>
+    <h1>Contact Us</h1>
+    <form novalidate>
+      <section class="row">
+        <p>
+          <label for="fname">First Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="fname" name="fname" autocomplete="given-name" aria-required="true" aria-describedby="e-fname">
+          <strong id="e-fname" role="alert" aria-live="polite"></strong>
+        </p>
+        <p>
+          <label for="lname">Last Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="lname" name="lname" autocomplete="family-name" aria-required="true" aria-describedby="e-lname">
+          <strong id="e-lname" role="alert" aria-live="polite"></strong>
+        </p>
+      </section>
+      <p>
+        <label for="email">Email Address <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" aria-required="true" aria-describedby="e-email">
+        <strong id="e-email" role="alert" aria-live="polite"></strong>
+      </p>
+      <fieldset>
+        <legend>Query Type <span aria-hidden="true">*</span></legend>
+        <section class="radios">
+          <label>
+            <input type="radio" name="qtype" value="general" aria-required="true">
+            <span></span>
+            General Enquiry
+          </label>
+          <label>
+            <input type="radio" name="qtype" value="support" aria-required="true">
+            <span></span>
+            Support Request
+          </label>
+        </section>
+        <strong id="e-qtype" role="alert" aria-live="polite"></strong>
+      </fieldset>
+      <p>
+        <label for="msg">Message <span aria-hidden="true">*</span></label>
+        <textarea id="msg" name="msg" rows="4" aria-required="true" aria-describedby="e-msg"></textarea>
+        <strong id="e-msg" role="alert" aria-live="polite"></strong>
+      </p>
+      <p class="check">
+        <label>
+          <input type="checkbox" id="consent" name="consent" aria-required="true" aria-describedby="e-consent">
+          <span></span>
+          I consent to being contacted by the team <span aria-hidden="true">*</span>
+        </label>
+        <strong id="e-consent" role="alert" aria-live="polite"></strong>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </article>
+</main>
+</body>
+</html>
