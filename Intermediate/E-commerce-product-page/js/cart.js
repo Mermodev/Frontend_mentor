@@ -125,6 +125,7 @@ function renderCart() {
   info.appendChild(priceCalc);
 
   const removeBtn = document.createElement('button');
+  removeBtn.type = 'button';
   removeBtn.classList.add('cart-item__remove');
   removeBtn.setAttribute('aria-label', 'Remove item from cart');
 
@@ -146,6 +147,7 @@ function renderCart() {
 
   // Checkout button
   const checkoutBtn = document.createElement('button');
+  checkoutBtn.type = 'button';
   checkoutBtn.classList.add('checkout-btn');
   checkoutBtn.textContent = 'Checkout';
   checkoutBtn.addEventListener('click', () => {

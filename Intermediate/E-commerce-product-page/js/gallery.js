@@ -24,6 +24,7 @@ function buildThumbs(container, clickHandler) {
   container.innerHTML = '';
   IMAGES.forEach((img, i) => {
     const btn = document.createElement('button');
+    btn.type = 'button';
     btn.classList.add('thumb-item');
     btn.setAttribute('aria-label', `View image ${i + 1}`);
     if (i === currentIndex) btn.classList.add('is-active');

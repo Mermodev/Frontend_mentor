@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('.rating-btn');
 const submitBtn = document.querySelector('.submit-btn');
-const ratingCard = document.getElementById('rating-card');
-const thankCard = document.getElementById('thank-card');
+const ratingCard = document.getElementById('tost0');
+const thankCard = document.getElementById('tost');
 const selectedText = document.getElementById('selected-text');
 
 let selectedValue = null;
